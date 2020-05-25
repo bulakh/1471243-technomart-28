@@ -257,15 +257,15 @@
         <h2>КОНТАКТЫ</h2>
         <p>Вы можете забрать товар сами,<br> 
           заехав в наш офис:</p>
-        <a href="#">
+        <a href="#"> <!--Открывает большую карту-->
           <img src="img/map_small.jpg" width="300" height="158" alt="Карта адреса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
-        <button type="button">Заблудились? Напишите нам!</button>
+        <button type="button">Заблудились? Напишите нам!</button> <!--Открывает попап Напишите нам-->
       </section>
     </main>
     <footer>
       <a href="index.html"> 
-        <img src="img/logo-technomart.svg" width="100" height="50" alt="Техномарт">
+        <img src="img/logo-technomart.svg" width="100" height="50" alt="Логотип интернет-магазина Техномарт">
       </a>
       <section>
         <h3 class="visually-hidden">Контактная информация</h3>
@@ -330,5 +330,29 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </footer>
+    <section>
+      <h3 class="visually-hidden">Подробная карта</h3>
+      <img src="img/map_popup.jpg" alt="Большая карта адреса: г Санкт-Петербург ул Большая конюшенная, 19">
+      <button type="button"></button><!--Закрыть-->
+    </section>
+    <section>
+      <h3 class="visually-hidden">Напишите нам</h3>
+      <form action="https://echo.htmlacademy.ru" method="POST"> 
+        <p>
+          <label for="write-name">Ваше имя:</label>
+          <input type="text" id="write-name" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="write-email">Введите ваш email:</label>
+          <input type="email" id="write-email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="write-text">Текст письма:</label>
+          <textarea id="write-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Оформить заказ</button>
+        <button type="button"></button><!--Закрыть-->
+      </form>
+    </section>
   </body>
 </html>
