@@ -113,7 +113,7 @@ img {
     background-color: var(--special-darkblue-1);
 }
 
-.container--footer {
+.container--header {
     display: flex;
     justify-content: space-between;
 }
