@@ -90,28 +90,28 @@
               <h3 class="products-menu__title">Доставка</h3>
               <a class="products-menu__link" href="#">Бесплатно</a>
             </li>
-          </ul>
-          <div class="slider">
-            <ul class="slider__list">
-              <li class="slider__item">
-                <div class="slider__wrap">
-                  <h3 class="slider__title">Перфораторы</h3>
-                  <p class="slider__subtitle">Настоящие мужские игрушки</p>
-                </div>
-                <img src="img/workman-1.jpg" width="620" height="266" alt="Рабочий с перфоратором Bosch">
-              </li>
-              <li class="slider__item">
-                <div class="slider__wrap">
-                  <h3 class="slider__title">Дрели</h3>
-                  <p class="slider__subtitle">Соседям на радость!</p>
-                </div>
-                <img src="img/workman-2.jpg" width="620" height="266" alt="Рабочий с дрелью Bosch">
-              </li>
-            </ul>
-            <a class="main-button" href="catalog.html">
-              Открыть каталог
-            </a>
-          </div>
+            <li class="slider">
+              <ul class="slider__list">
+                <li class="slider__item slider__item--workman1">
+                    <h3 class="slider__title">Перфораторы</h3>
+                    <p class="slider__subtitle">Настоящие мужские игрушки</p>
+                    <a class="main-button" href="catalog.html">
+                      Открыть каталог
+                    </a>
+                </li>
+                <li class="slider__item hidden">
+                  <div class="slider__wrap">
+                    <h3 class="slider__title">Дрели</h3>
+                    <p class="slider__subtitle">Соседям на радость!</p>
+                  </div>
+                  <img src="img/workman-2.jpg" width="620" height="266" alt="Рабочий с дрелью Bosch">
+                  <a class="main-button" href="catalog.html">
+                    Открыть каталог
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>    
         </section>
         <section class="popular-products">
           <div class="popular-wrap">
@@ -119,7 +119,7 @@
             <a class="main-button" href="#">Все популярные товары</a>
           </div>
           <ul class="popular-products__list popular-products__list--flex">
-            <li>
+            <li class="popular-products__item">
               <article class="card-product">
                 <img src="img/9000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
                 <h3 class="card-product__title">
@@ -131,7 +131,7 @@
                 <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
               </article>
             </li>
-            <li>
+            <li class="popular-products__item">
               <article class="card-product">
                 <img src="img/3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000"> <!--New-->
                 <h3 class="article__title">
@@ -143,7 +143,7 @@
                 <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
               </article>
             </li>
-            <li>
+            <li class="popular-products__item">
               <article class="card-product">
                 <img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 <h3 class="card-product__title">
@@ -155,7 +155,7 @@
                 <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
               </article>
             </li>
-            <li>
+            <li class="popular-products__item">
               <article class="card-product">
                 <img src="img/2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000"> <!--New-->
                 <h3 class="card-product__title">
@@ -224,29 +224,26 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
               <div class="services__wrap">
                 <ul class="services__list">
-                  <li class="services__item">
+                  <li class="services__item services__item--delivery">
                     <h3 class="services__title">Доставка</h3>
                     <p class="services__text">Мы с удовольствием доставим ваш товар прямо 
                       к вашему подъезду совершенно бесплатно!
                       Ведь мы неплохо заработаем, 
                       поднимая его на ваш этаж!</p>
-                      <img src="img/car.png" width="619" height="283" alt="">
                   </li>
-                  <li class="services__item">
+                  <li class="services__item services__item--garant hidden">
                     <h3 class="services__title">Гарантия</h3>
                     <p class="services__text">Если купленный у нас товар поломается или заискрит, 
                       а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. 
                       Мы обменяем сгоревший товар на новый. 
                     </p>
                     <p class="services__text">Дом уж восстановите как-нибудь сами.</p>
-                    <img src="img/garant.png" width="389" height="283" alt="">
                   </li>
-                  <li class="services__item">
+                  <li class="services__item services__item--credit hidden">
                     <h3 class="services__title">Кредит</h3>
                     <p class="services__text">Залезть в долговую яму стало проще!</p>
                     <p class="services__text">Кредитные консультанты придут вам на помощь.</p>
                     <button class="main-button main-button--credit" type="button">Отправить заявку</button>
-                    <img src="img/credit.png" width="465" height="285" alt="">
                   </li>
                 </ul> 
                 <ul class="services__list">
@@ -345,13 +342,13 @@
               Все права защищены</p>
               <ul class="social">
                 <li class="social__item">
-                  <a class="social__link social__link--vk" href="#">Вконтакте</a>
+                  <a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--fb" href="#">Фейсбук</a>
+                  <a class="social__link social__link--fb" href="#" aria-label="Фейсбук"></a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--insta" href="#">Инстаграм</a>
+                  <a class="social__link social__link--insta" href="#" aria-label="Инстаграм"></a>
                 </li>
               </ul>
             <div class="developer">
@@ -367,29 +364,35 @@
           </div>
         </div>
     </footer>
-    <section class="popup-map">
-      <h3 class="visually-hidden">Подробная карта</h3>
-      <img src="img/map_popup.jpg" alt="Большая карта адреса: г Санкт-Петербург ул Большая конюшенная, 19">
-      <button type="button" aria-label="Закрыть карту"></button>
-    </section>
-    <section class="popup-form-order">
-      <h3 class="visually-hidden">Напишите нам</h3>
-      <form action="https://echo.htmlacademy.ru" method="POST"> 
-        <p>
-          <label for="write-name">Ваше имя:</label>
-          <input type="text" id="write-name" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="write-email">Введите ваш email:</label>
-          <input type="email" id="write-email" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="write-text">Текст письма:</label>
-          <textarea id="write-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit">Оформить заказ</button>
-        <button type="button" aria-label="Закрыть форму заказа"></button>
-      </form>
-    </section>
+    <div class="popup-wrap">  
+      <section class="popup-map">
+        <h3 class="visually-hidden">Подробная карта</h3>
+        <img src="img/map_popup.jpg" alt="Большая карта адреса: г Санкт-Петербург ул Большая конюшенная, 19">
+        <button class="popup-button-close popup-button-close--map" type="button" aria-label="Закрыть карту"></button>
+      </section>
+    </div>  
+    <div class="popup-wrap">
+      <section class="popup-form-order">
+        <h3 class="visually-hidden">Напишите нам</h3>
+        <div class="popup-form-order__container">
+          <form class="popup-form-order__form" action="https://echo.htmlacademy.ru" method="POST"> 
+            <p class="popup-form-order__item">
+              <label class="popup-form-order__label" for="write-name">Ваше имя:</label>
+              <input type="text" id="write-name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="popup-form-order__item">
+              <label class="popup-form-order__label" for="write-email">Введите ваш email:</label>
+              <input type="email" id="write-email" name="email" placeholder="email@example.com">
+            </p>
+            <p class="popup-form-order__item">
+              <label class="popup-form-order__label" for="write-text">Текст письма:</label>
+              <textarea class="popup-form-order__textarea " id="write-text" name="text" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="main-button" type="submit">Оформить заказ</button>
+          </form>
+          <button class="popup-button-close" type="button" aria-label="Закрыть форму заказа"></button>
+        </div>
+      </section>
+    </div>  
   </body>
 </html>

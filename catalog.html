@@ -107,13 +107,13 @@
           <section class="filter">
             <h3 class="filter-title">Фильтр:</h3>
             <form action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
+              <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Цена:</legend>
                 <input type="range" name="price" id="filter__price" min="0" max="30000" step="10">
                 <input type="number" name="min-price" id="filter-min-price" min="0" max="29999">
                 <input type="number" name="max-price" id="filter-max-price"min="1" max="30000"> 
               </fieldset>
-              <fieldset>
+              <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Производители:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
@@ -138,7 +138,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Питание:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
@@ -180,7 +180,7 @@
             <section class="drills">
               <h2 class="visually-hidden">Карточки товаров</h2>
               <ul class="drills__list">
-                <li>
+                <li class="drills__item">
                   <article class="card-product">
                     <img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                     <h3 class="card-product__title">
@@ -192,7 +192,7 @@
                     <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
                   </article>
                 </li>
-                <li>
+                <li class="drills__item">
                   <article class="card-product">
                     <img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                     <h3 class="card-product__title">
@@ -204,7 +204,7 @@
                     <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
                   </article>
                 </li>
-                <li>
+                <li class="drills__item">
                   <article class="card-product">
                     <img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"> <!--New-->
                     <h3 class="card-product__title">
@@ -216,7 +216,7 @@
                     <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
                   </article>
                 </li>
-                <li>
+                <li class="drills__item">
                   <article class="card-product">
                     <img src="img/3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000"> <!--New-->
                     <h3 class="card-product__title">
@@ -228,7 +228,7 @@
                     <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
                   </article> 
                 </li>
-                <li>
+                <li class="drills__item">
                   <article class="card-product">
                     <img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                     <h3 class="card-product__title">
@@ -240,7 +240,7 @@
                     <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
                   </article>
                 </li>
-                <li>
+                <li class="drills__item">
                   <article class="card-product">
                     <img src="img/2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000"> <!--New-->
                     <h3 class="card-product__title">
@@ -251,7 +251,7 @@
                     <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
                   </article>
                 </li>
-                <li>
+                <li class="drills__item">
                   <article class="card-product">
                     <img src="img/3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000"> <!--New-->
                     <h3 class="card-product__title">
@@ -263,7 +263,7 @@
                     <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
                   </article>
                 </li>
-                <li>
+                <li class="drills__item">
                   <article class="card-product">
                     <img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                     <h3 class="card-product__title">
@@ -275,7 +275,7 @@
                     <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
                   </article>
                 </li>
-                <li>
+                <li class="drills__item">
                   <article class="card-product">
                     <img src="img/2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000"> <!--New-->
                     <h3 class="card-product__title">
@@ -298,8 +298,8 @@
               <li class="pagination__item">
                 <a class="pagination__link" href="#">3</a>
               </li>
-              <li class="pagination__item pagination__item--next">
-                <a class="pagination__link" href="#">Следующая</a>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--next " href="#">Следующая</a>
               </li>
             </ul>
           </div>
@@ -370,13 +370,13 @@
             Все права защищены</p>
             <ul class="social">
               <li class="social__item">
-                <a class="social__link social__link--vk" href="#">Вконтакте</a>
+                <a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--fb" href="#">Фейсбук</a>
+                <a class="social__link social__link--fb" href="#" aria-label="Фейсбук"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--insta" href="#">Инстаграм</a>
+                <a class="social__link social__link--insta" href="#" aria-label="Инстаграм"></a>
               </li>
             </ul>
           <div class="developer">
@@ -392,11 +392,15 @@
         </div>
       </div>
     </footer>
-    <section class="popup-basket">
-        <h3>Товар добавлен в корзину!</h3>
-        <a href="#">Оформить заказ</a>
-        <a href="#">Продолжить покупки</a>
-        <button type="button" aria-label="Закрыть уведомление"></button> 
-    </section>
+    <div class="popup-wrap"> 
+      <section class="popup-basket">
+          <h3>Товар добавлен в корзину!</h3>
+          <div class="popup-basket__wrap">
+            <a class="main-button" href="#">Оформить заказ</a>
+            <a class="main-button" href="#">Продолжить покупки</a>
+          </div>
+          <button class="popup-button-close popup-button-close--basket" type="button" aria-label="Закрыть уведомление"></button> 
+      </section>
+    </div>
   </body>
 </html>
