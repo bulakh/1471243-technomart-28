@@ -11,7 +11,7 @@
     <header class="header">
         <div class="header-wrap">
           <div class="container container--header">
-            <a class="logo">
+            <a class="logo logo--position">
               <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
             </a>
             <form class="search-form" action="#" method="get">
@@ -28,15 +28,15 @@
             строительных материалов
             и&nbspинструментов для ремонта
           </h1>
-          <section class="header-info">
+          <section class="header-info header-info--main">
             <h3 class="visually-hidden">Наши контакты</h3>
             <a class="header-info__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="header-info__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </section>
-          <section class="header-cabinet">
+          <section class="header-cabinet header-cabinet--main">
             <h3 class="visually-hidden">Личный кабинет</h3>
             <a class="header-cabinet__button header-cabinet__button--enter" href="#">Войти</a>
-            <a class="header-cabinet__button" href="#">Регистрация</a>
+            <a class="header-cabinet__button header-cabinet__button--register" href="#">Регистрация</a>
           </section>
         </div>
         <nav class="header-nav container">
@@ -70,7 +70,7 @@
         <section class="products-menu">
           <h2 class="visually-hidden">Наши товары</h2>
           <ul class="products-menu__list">
-            <li class="products-menu__item products-menu__item--materials">  
+            <li class="products-menu__item products-menu__item--materials label-new">  
               <h3 class="products-menu__title">Материалы</h3> <!--New-->
               <a class="products-menu__link" href="#">На любой вкус</a>
             </li>
@@ -120,50 +120,59 @@
           </div>
           <ul class="popular-products__list popular-products__list--flex">
             <li class="popular-products__item">
-              <article class="card-product">
-                <img src="img/9000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
+              <article class="card-product card-product--main">
+                <img class="card-product__img card-product__img--big-img " src="img/9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
                 <h3 class="card-product__title">
                   Перфоратор BOSCH BFG 9000
                 </h3>
                 <p class="card-product__price card-product__price--last">32500 Р.</p>
                 <p class="card-product__price card-product__price--now">25500 Р.</p>
-                <button class="card-product__button card-product__button--buy" type="button">Купить</button> 
-                <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
+                <div class="buttons-wrap">
+                  <button class="card-product__button card-product__button--buy" type="button">Купить</button> 
+                  <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
+                </div>  
               </article>
             </li>
             <li class="popular-products__item">
-              <article class="card-product">
-                <img src="img/3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000"> <!--New-->
-                <h3 class="article__title">
+              <article class="card-product card-product--main label-new">
+                <img class="card-product__img" src="img/3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000"> <!--New-->
+                <h3 class="card-product__title">
                   Перфоратор BOSCH BFG 3000
                 </h3>
                 <p class="card-product__price card-product__price--last">22500 Р.</p>
                 <p class="card-product__price card-product__price--now">15500 Р.</p>
-                <button  class="card-product__button card-product__button--buy" type="button">Купить</button> 
-                <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
+                <div class="buttons-wrap">
+                  <button  class="card-product__button card-product__button--buy" type="button">Купить</button> 
+                  <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
+                </div>
               </article>
             </li>
             <li class="popular-products__item">
-              <article class="card-product">
-                <img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              <article class="card-product card-product--main">
+                <img class="card-product__img" src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 <h3 class="card-product__title">
                   Перфоратор BOSCH BFG 6000
                 </h3>
                 <p class="card-product__price card-product__price--last">30500 Р.</p>
                 <p class="card-product__price card-product__price--now">25500 Р.</p>
-                <button class="card-product__button card-product__button--buy" type="button">Купить</button> 
-                <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
+                <div class="buttons-wrap">
+                  <button class="card-product__button card-product__button--buy" type="button">Купить</button> 
+                  <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
+                </div>  
               </article>
             </li>
             <li class="popular-products__item">
-              <article class="card-product">
-                <img src="img/2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000"> <!--New-->
+              <article class="card-product card-product--main label-new">
+                <img class="card-product__img" src="img/2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000"> <!--New-->
                 <h3 class="card-product__title">
                   Перфоратор BOSCH BFG 2000
                 </h3>
+                <p class="card-product__price card-product__price--last blind-element">15000 Р.</p> <!--Заглушка-->
                 <p class="card-product__price card-product__price--now">12500 Р.</p>
-                <button class="card-product__button card-product__button--buy" type="button">Купить</button> 
-                <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
+                <div class="buttons-wrap">
+                  <button class="card-product__button card-product__button--buy" type="button">Купить</button> 
+                  <button class="card-product__button card-product__button--bookmark" type="button">В Закладки</button>
+                </div>
               </article>
             </li>
           </ul>
@@ -175,12 +184,12 @@
           </div>
           <ul class="manufactures__list manufactures__list--flex">
             <li class="manufactures__item">
-              <a class="manufactures__link" href="#">
+              <a class="manufactures__link manufactures__link--bosch" href="#">
                 <img src="img/bosch.png" width="126" height="37" alt="Сайт производителя Bosch">
               </a>
             </li>
             <li class="manufactures__item">
-              <a class="manufactures__link" href="#">
+              <a class="manufactures__link manufactures__link--makita" href="#">
                 <img src="img/makita.png" width="123" height="40" alt="Сайт производителя Makita">
               </a>
             </li>
@@ -190,12 +199,12 @@
               </a>
             </li>
             <li class="manufactures__item">
-              <a class="manufactures__link" href="#">
+              <a class="manufactures__link manufactures__link--interskol" href="#">
                 <img src="img/interskol.png" width="200" height="88" alt="Сайт производителя Интерскол">
               </a>
             </li>
             <li class="manufactures__item">
-              <a class="manufactures__link" href="#">
+              <a class="manufactures__link manufactures__link--hitachi" href="#">
                 <img src="img/hitachi.png" width="169" height="31" alt="Сайт производителя Hitachi">
               </a>
             </li>
@@ -205,12 +214,12 @@
               </a>
             </li>
             <li class="manufactures__item">
-              <a class="manufactures__link" href="#">
+              <a class="manufactures__link manufactures__link--aeg" href="#">
                 <img src="img/aeg.png" width="151" height="96" alt="Сайт производителя AEG">
               </a>
             </li>
             <li class="manufactures__item">
-              <a class="manufactures__link" href="#">
+              <a class="manufactures__link manufactures__link--metabo" href="#">
                 <img src="img/metabo.png" width="204" height="69" alt="Сайт производителя Metabo">
               </a>
             </li>
