@@ -102,49 +102,83 @@
         <h1 class="catalog-title catalog-title--main-product">Перфораторы</h1>
         <div class="catalog-wrapper">
           <section class="filter">
-            <h3 class="filter-title">Фильтр:</h3>
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="filter__fieldset">
+            <h3 class="filter-title filter-title--filter">Фильтр:</h3>
+            <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter__fieldset filter__fieldset--price">
                 <legend class="filter__legend">Цена:</legend>
-                <input type="range" name="price" id="filter__price" min="0" max="30000" step="10">
-                <input type="number" name="min-price" id="filter-min-price" min="0" max="29999">
-                <input type="number" name="max-price" id="filter-max-price"min="1" max="30000"> 
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      <input class="price-controls__input" type="number" name="min-price" value="0">
+                      —
+                    </label>
+                    <label class="max-price">
+                      <input class="price-controls__input" type="number" name="max-price" value="30000">
+                    </label>
+                  </div>
+                </div>
               </fieldset>
-              <fieldset class="filter__fieldset">
-                <legend class="filter__legend">Производители:</legend>
+              <fieldset class="filter__fieldset filter__fieldset--manufactures">
+                <legend class="filter__legend filter__legend--manufactures">Производители:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
-                    <input type="checkbox" name="bosch" id="filter-bosch" checked>
-                    <label for="filter-bosch">Bosch</label>
+                    <label class="check option">
+                      <input class="check__input" type="checkbox" name="bosch" id="filter-bosch" checked>
+                      <span class="check__box"></span>
+                      <span class="check__text">Bosch</span>
+                    </label>
                   </li>
                   <li class="filter__item">
-                    <input type="checkbox" name="interskol" id="filter-interskol">
-                    <label for="filter-interskol">Интерскол</label>
+                    <label class="check option">
+                      <input class="check__input" type="checkbox" name="interskol" id="filter-interskol">
+                      <span class="check__box"></span>
+                      <span class="check__text">Интерскол</span>
+                    </label>
                   </li>
                   <li class="filter__item">
-                    <input type="checkbox" name="makita" id="filter-makita" checked>
-                    <label for="filter-makita">Makita</label>
+                    <label class="check option">
+                      <input class="check__input" type="checkbox" name="makita" id="filter-makita" checked>
+                      <span class="check__box"></span>
+                      <span class="check__text">Makita</span>
+                    </label>
                   </li>
                   <li class="filter__item">
-                    <input type="checkbox" name="dewalt" id="filter-dewalt">
-                    <label for="filter-dewalt">Dewalt</label>
+                    <label class="check option">
+                      <input class="check__input" type="checkbox" name="dewalt" id="filter-dewalt" >
+                      <span class="check__box"></span>
+                      <span class="check__text">Dewalt</span>
+                    </label>
                   </li>
                   <li class="filter__item">
-                    <input type="checkbox" name="hitachi" id="filter-hitachi">
-                    <label for="filter-hitachi">Hitachi</label>
+                    <label class="check option">
+                      <input class="check__input" type="checkbox" name="hitachi" id="filter-hitachi">
+                      <span class="check__box"></span>
+                      <span class="check__text">Hitachi</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter__fieldset">
-                <legend class="filter__legend">Питание:</legend>
+              <fieldset class="filter__fieldset filter__fieldset--charge">
+                <legend class="filter__legend filter__legend--charge">Питание:</legend>
                 <ul class="filter__list">
-                  <li class="filter__item">
-                    <input type="radio" name="charge" value="accum" id="filter-accum" checked>
-                    <label for="filter-accum">Аккумуляторные</label>
+                  <li class="filter__item filter__item--charge">
+                    <label class="radio option">
+                    <input class="radio__input" type="radio" name="charge" value="accum" id="filter-accum" checked>
+                    <span class="radio__button"></span>
+                    Аккумуляторные</label>
                   </li>
                   <li class="filter__item">
-                    <input type="radio" name="charge" value="wire" id="filter-wire">
-                    <label for="filter-wire">Сетевые</label>
+                    <label class="radio option">
+                    <input class="radio__input" type="radio" name="charge" value="wire" id="filter-wire" >
+                    <span class="radio__button"></span>
+                    Сетевые</label>
                   </li>
                 </ul>
               </fieldset>
@@ -407,15 +441,13 @@
         </div>
       </div>
     </footer>
-    <div class="popup-wrap"> 
-      <section class="popup-basket">
-          <h3>Товар добавлен в корзину!</h3>
-          <div class="popup-basket__wrap">
-            <a class="main-button" href="#">Оформить заказ</a>
-            <a class="main-button" href="#">Продолжить покупки</a>
-          </div>
-          <button class="popup-button-close popup-button-close--basket" type="button" aria-label="Закрыть уведомление"></button> 
-      </section>
-    </div>
+    <section class="popup-basket">
+        <h3 class="popup-basket__title">Товар добавлен в корзину!</h3>
+        <div class="popup-basket__wrap">
+          <a class="main-button main-button--basket" href="#">Оформить заказ</a>
+          <a class="main-button main-button--basket main-button--basket-white" href="#">Продолжить покупки</a>
+        </div>
+        <button class="popup-button-close popup-button-close--basket" type="button" aria-label="Закрыть уведомление"></button> 
+    </section>
   </body>
 </html>

@@ -99,13 +99,10 @@
                       Открыть каталог
                     </a>
                 </li>
-                <li class="slider__item hidden">
-                  <div class="slider__wrap">
-                    <h3 class="slider__title">Дрели</h3>
-                    <p class="slider__subtitle">Соседям на радость!</p>
-                  </div>
-                  <img src="img/workman-2.jpg" width="620" height="266" alt="Рабочий с дрелью Bosch">
-                  <a class="main-button" href="catalog.html">
+                <li class="slider__item slider__item--workman2 hidden">
+                  <h3 class="slider__title">Дрели</h3>
+                  <p class="slider__subtitle">Соседям на радость!</p>
+                  <a class="main-button main-button--slider" href="catalog.html">
                     Открыть каталог
                   </a>
                 </li>
@@ -373,35 +370,31 @@
           </div>
         </div>
     </footer>
-    <div class="popup-wrap">  
-      <section class="popup-map">
-        <h3 class="visually-hidden">Подробная карта</h3>
-        <img src="img/map_popup.jpg" alt="Большая карта адреса: г Санкт-Петербург ул Большая конюшенная, 19">
-        <button class="popup-button-close popup-button-close--map" type="button" aria-label="Закрыть карту"></button>
-      </section>
-    </div>  
-    <div class="popup-wrap">
-      <section class="popup-form-order">
-        <h3 class="visually-hidden">Напишите нам</h3>
-        <div class="popup-form-order__container">
-          <form class="popup-form-order__form" action="https://echo.htmlacademy.ru" method="POST"> 
-            <p class="popup-form-order__item">
-              <label class="popup-form-order__label" for="write-name">Ваше имя:</label>
-              <input type="text" id="write-name" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="popup-form-order__item">
-              <label class="popup-form-order__label" for="write-email">Введите ваш email:</label>
-              <input type="email" id="write-email" name="email" placeholder="email@example.com">
-            </p>
-            <p class="popup-form-order__item">
-              <label class="popup-form-order__label" for="write-text">Текст письма:</label>
-              <textarea class="popup-form-order__textarea " id="write-text" name="text" placeholder="В свободной форме"></textarea>
-            </p>
-            <button class="main-button" type="submit">Оформить заказ</button>
-          </form>
-          <button class="popup-button-close" type="button" aria-label="Закрыть форму заказа"></button>
-        </div>
-      </section>
-    </div>  
+    <section class="popup-map">
+      <h3 class="visually-hidden">Подробная карта</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5590252007714!2d30.31911374967104!3d59.939459185883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592381954532!5m2!1sru!2sru" width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" title="Наш адрес: город Санкт-Петербург, улица Большая Конюшенная, 19" tabindex="0"></iframe>
+      <button class="popup-button-close popup-button-close--map" type="button" aria-label="Закрыть карту"></button>
+    </section>
+    <section class="popup-form-order">
+      <h3 class="visually-hidden">Напишите нам</h3>
+      <div class="popup-form-order__container">
+        <form class="popup-form-order__form" action="https://echo.htmlacademy.ru" method="POST"> 
+          <p class="popup-form-order__item">
+            <label class="popup-form-order__label" for="write-name">Ваше имя:</label>
+            <input class="popup-form-order__input" type="text" id="write-name" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="popup-form-order__item">
+            <label class="popup-form-order__label" for="write-email">Ваш e-mail:</label>
+            <input class="popup-form-order__input" type="email" id="write-email" name="email" placeholder="email@example.com">
+          </p>
+          <p class="popup-form-order__item">
+            <label class="popup-form-order__label" for="write-text">Текст письма:</label>
+            <textarea class="popup-form-order__input popup-form-order__input--textarea " id="write-text" name="text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="main-button main-button--order" type="submit">Отправить</button>
+        </form>
+        <button class="popup-button-close popup-button-close--order" type="button" aria-label="Закрыть форму заказа"></button>
+      </div>
+    </section>
   </body>
 </html>
