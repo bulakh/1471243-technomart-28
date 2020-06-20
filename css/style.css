@@ -10,6 +10,7 @@
     --special-background-1: #F7F3EC;
     --special-background-2: #F9F5F0;
     --special-background-3: #F1F1F1;
+    --special-background-4: #f4f4f4;
     --black: #000000;
     --white: #FFFFFF;
     --special-white: #F3F7F9;
@@ -795,7 +796,7 @@ img {
 
     background-color: var(--basic-red);
     width: 192px;
-    height: 38px;
+    min-height: 38px;
 
     border: none;
     cursor: pointer;
@@ -941,6 +942,10 @@ img {
     margin-right: 80px;
 }
 
+.services__list--buttons {
+    background-color: var(--special-darkblue-1);
+}
+
 
 .services__wrap {
     display: flex;
@@ -1007,7 +1012,7 @@ img {
     padding-left: 22px;
 }
 
-.services-button__item {
+.services-button__item:not(:last-child) {
     margin-bottom: 2px;
 }
 
@@ -2076,6 +2081,7 @@ img {
     border:none;
     outline: none;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .popup-button-close--order {
@@ -2163,8 +2169,19 @@ img {
     margin-bottom: 51px;
 } 
 
+.popup-form-order__wrap {
+    background-color: var(--special-background-4);
+    width: 100%;
+
+    position: absolute;
+    min-height: 112px;
+    left: 0;
+    bottom: 0;
+}
+
 .main-button--order {
     width: 100%;
+    z-index: 1;
 }
 
 
