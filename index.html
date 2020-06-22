@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">  
+    <script src="../js/map.js"></script>
   </head>
   <body class="page-body">
     <header class="header">
@@ -287,7 +288,7 @@
           <h2 class="main-title main-title--about-contact">КОНТАКТЫ</h2>
           <p class="contact-text contact-text--contact">Вы можете забрать товар сами,<br> 
             заехав в наш офис:</p>
-          <a href="#"> <!--Открывает большую карту-->
+          <a class="open-map" href="map.html" alt="Открыть большую карту"> <!--Открывает большую карту-->
             <img class="contact__map" src="img/map_small.jpg" width="300" height="158" alt="Карта адреса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <a class="main-button main-button--write" href="form.html">
@@ -384,11 +385,11 @@
         <form class="popup-form-order__form" action="https://echo.htmlacademy.ru" method="POST"> 
           <p class="popup-form-order__item">
             <label class="popup-form-order__label" for="write-name">Ваше имя:</label>
-            <input class="popup-form-order__input" type="text" id="write-name" name="name" placeholder="Имя Фамилия">
+            <input class="popup-form-order__input" type="text" id="write-name" name="name" placeholder="Имя Фамилия" required>
           </p>
           <p class="popup-form-order__item">
             <label class="popup-form-order__label" for="write-email">Ваш e-mail:</label>
-            <input class="popup-form-order__input" type="email" id="write-email" name="email" placeholder="email@example.com">
+            <input class="popup-form-order__input" type="email" id="write-email" name="email" placeholder="email@example.com" required>
           </p>
           <p class="popup-form-order__item">
             <label class="popup-form-order__label" for="write-text">Текст письма:</label>
