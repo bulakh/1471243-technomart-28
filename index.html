@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">  
-    <script src="../js/map.js"></script>
   </head>
   <body class="page-body">
     <header class="header">
@@ -96,14 +95,14 @@
             </li>
             <li class="slider">
               <ul class="slider__list">
-                <li class="slider__item slider__item--workman1">
+                <li class="slider__item slider__item--workman1 slider__item--active">
                     <h3 class="slider__title">Перфораторы</h3>
                     <p class="slider__subtitle">Настоящие мужские игрушки</p>
                     <a class="main-button main-button--slider" href="catalog.html">
                       Открыть каталог
                     </a>
                 </li>
-                <li class="slider__item slider__item--workman2 hidden">
+                <li class="slider__item slider__item--workman2">
                   <h3 class="slider__title">Дрели</h3>
                   <p class="slider__subtitle">Соседям на радость!</p>
                   <a class="main-button main-button--slider" href="catalog.html">
@@ -111,6 +110,22 @@
                   </a>
                 </li>
               </ul>
+              <div class="slider__buttons">
+                <div class="slider__next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
+                </div>
+                <div class="slider__previous">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
+                </div>
+              </div>
+              <div class="slider__dots">
+                <div class="slider__nav slider__nav__1">
+                  <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#fff"/><circle class="slider__circle slider__circle--active" cx="5" cy="5" r="3" fill="#fff"/></svg>
+                </div>
+                <div class="slider__nav slider__nav__2">
+                  <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#fff"/><circle class="slider__circle" cx="5" cy="5" r="3" fill="#fff"/></svg>
+                </div>
+              </div>
             </li>
           </ul>    
         </section>
@@ -234,14 +249,14 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
               <div class="services__wrap">
                 <ul class="services__list">
-                  <li class="services__item services__item--delivery">
+                  <li class="services__item services__item--delivery delivery">
                     <h3 class="services__title">Доставка</h3>
                     <p class="services__text services__text--delivery">Мы с удовольствием доставим ваш товар прямо
                       к вашему подъезду совершенно бесплатно!<br>
                       Ведь мы неплохо заработаем,<br> 
                       поднимая его на ваш этаж!</p>
                   </li>
-                  <li class="services__item services__item--garant hidden">
+                  <li class="services__item services__item--garant garant">
                     <h3 class="services__title">Гарантия</h3>
                     <p class="services__text">Если купленный у нас товар поломается или заискрит, 
                       а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. 
@@ -249,7 +264,7 @@
                     </p>
                     <p class="services__text">Дом уж восстановите как-нибудь сами.</p>
                   </li>
-                  <li class="services__item services__item--credit hidden">
+                  <li class="services__item services__item--credit credit">
                     <h3 class="services__title">Кредит</h3>
                     <p class="services__text">Залезть в долговую яму стало проще!</p>
                     <p class="services__text">Кредитные консультанты придут вам на помощь.</p>
@@ -258,13 +273,13 @@
                 </ul> 
                 <ul class="services__list services__list--buttons">
                   <li class="services-button__item">
-                    <button class="services__button services__button--active" type="button">Доставка</button>
+                    <button data-name="delivery" class="services__button" type="button">Доставка</button>
                   </li>
                   <li class="services-button__item">
-                    <button class="services__button" type="button">Гарантия</button>
+                    <button data-name="garant" class="services__button" type="button">Гарантия</button>
                   </li>
                   <li class="services-button__item">
-                    <button class="services__button" type="button">Кредит</button>
+                    <button data-name="credit" class="services__button" type="button">Кредит</button>
                   </li>
                 </ul>
               </div>
@@ -385,11 +400,11 @@
         <form class="popup-form-order__form" action="https://echo.htmlacademy.ru" method="POST"> 
           <p class="popup-form-order__item">
             <label class="popup-form-order__label" for="write-name">Ваше имя:</label>
-            <input class="popup-form-order__input" type="text" id="write-name" name="name" placeholder="Имя Фамилия" required>
+            <input class="popup-form-order__input popup-form-order__input--name" type="text" id="write-name" name="name" placeholder="Имя Фамилия">
           </p>
           <p class="popup-form-order__item">
             <label class="popup-form-order__label" for="write-email">Ваш e-mail:</label>
-            <input class="popup-form-order__input" type="email" id="write-email" name="email" placeholder="email@example.com" required>
+            <input class="popup-form-order__input popup-form-order__input--email" type="email" id="write-email" name="email" placeholder="email@example.com">
           </p>
           <p class="popup-form-order__item">
             <label class="popup-form-order__label" for="write-text">Текст письма:</label>
@@ -401,5 +416,18 @@
         <button class="popup-button-close popup-button-close--order" type="button" aria-label="Закрыть форму заказа"></button>
       </div>
     </section>
+    <section class="popup-basket">
+      <h3 class="popup-basket__title">Товар добавлен в корзину!</h3>
+      <div class="popup-basket__wrap">
+        <a class="main-button main-button--basket" href="#">Оформить заказ</a>
+        <a class="main-button main-button--basket main-button--basket-white" href="#">Продолжить покупки</a>
+      </div>
+      <button class="popup-button-close popup-button-close--basket" type="button" aria-label="Закрыть уведомление"></button> 
+  </section>
+    <script src="js/form.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
