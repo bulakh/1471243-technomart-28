@@ -9,36 +9,36 @@ let isStorageSupport = true;
 let storage = "";
 
 try {
-  storage = localStorage.getItem("name");
+    storage = localStorage.getItem("name");
 } catch (err) {
-  isStorageSupport = false;
+    isStorageSupport = false;
 }
 
-formLink.addEventListener("click", function (evt) {
+formLink.addEventListener("click", function(evt) {
     evt.preventDefault();
     formPopup.classList.add("popup-show");
 
     if (storage) {
         formName.value = storage;
         formEmail.focus();
-      } else {
+    } else {
         formName.focus();
     }
 });
 
 
-formClose.addEventListener("click", function (evt) {
+formClose.addEventListener("click", function(evt) {
     evt.preventDefault();
     formPopup.classList.remove("popup-show");
     formPopup.classList.remove("popup-error");
 });
 
-formForm.addEventListener("submit", function (evt) {
+formForm.addEventListener("submit", function(evt) {
     if (!formName.value || !formEmail.value) {
-      evt.preventDefault();
-      formPopup.classList.remove("popup-error");
-      formPopup.offsetWidth = formPopup.offsetWidth;
-      formPopup.classList.add("popup-error");
+        evt.preventDefault();
+        formPopup.classList.remove("popup-error");
+        formPopup.offsetWidth = formPopup.offsetWidth;
+        formPopup.classList.add("popup-error");
     } else {
         if (isStorageSupport) {
             localStorage.setItem("name", formName.value);
@@ -46,18 +46,12 @@ formForm.addEventListener("submit", function (evt) {
     }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
-      if (formPopup.classList.contains("popup-show")) {
-        evt.preventDefault();
-        formPopup.classList.remove("popup-show");
-        formPopup.classList.remove("popup-error");
-      }
+        if (formPopup.classList.contains("popup-show")) {
+            evt.preventDefault();
+            formPopup.classList.remove("popup-show");
+            formPopup.classList.remove("popup-error");
+        }
     }
 });
-
-
-
-
-
-
