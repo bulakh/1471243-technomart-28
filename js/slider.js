@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     sliderScreen[index].classList.add("slider__item--active");
 
 
-    sliderNext.addEventListener('click', function(event) {
+    sliderNext.addEventListener("click", function(event) {
 
         sliderScreen[index].classList.remove("slider__item--active");
         sliderCircle[index].classList.remove("slider__circle--active");
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         sliderCircle[index].classList.add("slider__circle--active");
     });
 
-    sliderPrev.addEventListener('click', function(event) {
+    sliderPrev.addEventListener("click", function(event) {
 
         sliderScreen[index].classList.remove("slider__item--active");
         sliderCircle[index].classList.remove("slider__circle--active");
