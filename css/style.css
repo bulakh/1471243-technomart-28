@@ -439,12 +439,12 @@ img {
 }
 
 
-.header-cabinet__button--enter:hover .icon-login path,
-.header-cabinet__button--enter:focus .icon-login path {
+.header-cabinet__button--enter:hover path,
+.header-cabinet__button--enter:focus path {
     fill: var(--basic-grey);
 }
 
-.header-cabinet__button--enter:active .icon-login path {
+.header-cabinet__button--enter:active path {
     fill: var(--basic-greylight-1);
 }
 
@@ -461,12 +461,12 @@ img {
 }
 
 
-.header-cabinet__link--name:hover .icon-user path,
-.header-cabinet__link--name:focus .icon-user path {
+.header-cabinet__link--name:hover path,
+.header-cabinet__link--name:focus path {
     fill: var(--basic-grey);
 }
 
-.header-cabinet__link--name:active .icon-user path {
+.header-cabinet__link--name:active path {
     fill: var(--basic-greylight-1);
 }
 
@@ -476,12 +476,12 @@ img {
     right: 17px;
 }
 
-.header-cabinet__link--logout:hover .icon-logout path,
-.header-cabinet__link--logout:focus .icon-logout path {
+.header-cabinet__link--logout:hover path,
+.header-cabinet__link--logout:focus path {
     fill: var(--basic-grey);
 }
 
-.header-cabinet__link--logout:active .icon-logout path {
+.header-cabinet__link--logout:active path {
     fill: var(--basic-greylight-1);
 }
 
@@ -554,6 +554,7 @@ img {
 
 .header-nav__link {
     display: inline-block;
+    vertical-align: middle;
     padding: 18px;
     width: 100%;
     padding-left: 26px;
@@ -966,7 +967,7 @@ img {
 }
 
 .manufactures {
-    margin-bottom: 42px;
+    margin-bottom: 48px;
 }
 
 .popular-title {
@@ -995,7 +996,7 @@ img {
 }
 
 .popular-wrap--manufactures {
-    margin-bottom: 23px;
+    margin-bottom: 17px;
 }
 
 .popular-products__list,
@@ -1059,36 +1060,36 @@ img {
         -ms-flex-align: center;
             align-items: center;
     width: 200px;
-    height: 111px;
+    height: 124px;
     padding: 9px;
 
 }
 
 .manufactures__link--makita {
-    height: 112px;
+    height: 124px;
 }
 
 .manufactures__link--bosch {
-    height: 117px;
+    height: 129px;
 }
 
 .manufactures__link--interskol {
-    height: 102px;
+    height: 115px;
 }
 
 .manufactures__link--hitachi {
-    height: 114px;
+    height: 127px;
     width: 206px;
 }
 
 .manufactures__link--aeg {
     width: 205px;
-    height: 110px;
+    height: 122px;
 }
 
 .manufactures__link--metabo {
     width: 210px;
-    height: 105px;
+    height: 117px;
 }
 
 
@@ -1356,6 +1357,7 @@ img {
 
 .logo--footer {
     display: inline-block;
+    vertical-align: middle;
     padding-top: 20px;
     padding-right: 41px;
     padding-bottom: 19px;
@@ -1659,16 +1661,16 @@ img {
 /* Filter double */
 
 .range-controls {
-    height: 35px;
+    height: 41px;
     width: 180px;
 
     border-radius: 5px;
     background-color: var(--special-background-1);
     position: relative;
 
-    margin-bottom: 14px;
+    margin-bottom: 8px;
 
-    padding-top: 45px;
+    padding-top: 39px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -1688,7 +1690,7 @@ img {
 
 .range-controls .toggle {
     position: absolute;
-    top: 35px;
+    top: 29px;
     left: 0;
 
     width: 4px;
@@ -1831,6 +1833,7 @@ img {
     font-size: 17px;
     line-height: 30px;
     border: none;
+    margin-bottom: 6px;
 }
 
 .filter__legend--manufactures {
@@ -2625,7 +2628,7 @@ img {
     right: 11px;
 }
 
-iframe {
+.popup-map__interactive {
     border: 0px;
 }
 
